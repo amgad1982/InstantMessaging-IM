@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstantMessaging-IM.Application", "src\InstantMessaging-IM.Application\InstantMessaging-IM.Application.csproj", "{696BCE4C-0F88-6538-2A5E-2D8F9ADEDABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstantMessaging-IM.Domain", "src\InstantMessaging-IM.Domain\InstantMessaging-IM.Domain.csproj", "{712AB81E-9018-D165-FAA8-67B889BDB289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstantMessaging-IM.Infrastructure", "src\InstantMessaging-IM.Infrastructure\InstantMessaging-IM.Infrastructure.csproj", "{0426CD69-9540-93D8-60D7-CCDD5AA9079E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstantMessaging-IM.API", "src\InstantMessaging-IM.API\InstantMessaging-IM.API.csproj", "{428829EC-D6D5-4A5E-99A1-15CAB089186D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{696BCE4C-0F88-6538-2A5E-2D8F9ADEDABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696BCE4C-0F88-6538-2A5E-2D8F9ADEDABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696BCE4C-0F88-6538-2A5E-2D8F9ADEDABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696BCE4C-0F88-6538-2A5E-2D8F9ADEDABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712AB81E-9018-D165-FAA8-67B889BDB289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712AB81E-9018-D165-FAA8-67B889BDB289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712AB81E-9018-D165-FAA8-67B889BDB289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712AB81E-9018-D165-FAA8-67B889BDB289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0426CD69-9540-93D8-60D7-CCDD5AA9079E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0426CD69-9540-93D8-60D7-CCDD5AA9079E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0426CD69-9540-93D8-60D7-CCDD5AA9079E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0426CD69-9540-93D8-60D7-CCDD5AA9079E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428829EC-D6D5-4A5E-99A1-15CAB089186D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428829EC-D6D5-4A5E-99A1-15CAB089186D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428829EC-D6D5-4A5E-99A1-15CAB089186D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428829EC-D6D5-4A5E-99A1-15CAB089186D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F5ECC17-4F1A-472B-BF04-A1DC393248A6}
+	EndGlobalSection
+EndGlobal
