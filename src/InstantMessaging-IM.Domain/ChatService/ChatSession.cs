@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InstantMessaging_IM.Domain.ChatService
 {
-    public class ChatSession:AuditEntity<Guid>
+    public class ChatSession:Entity<Guid>
     {
         private ChatSession() { }
 

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstantMessaging_IM.Application.Contracts
+namespace InstantMessaging_IM.Application.Common.Contracts
 {
-    public interface IAppDatabaseContext
+    public interface IInstantMessagingDbContext
     {
 
     }
