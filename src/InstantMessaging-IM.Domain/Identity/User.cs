@@ -11,9 +11,9 @@ namespace InstantMessaging_IM.Domain.Identity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-      
-        //public virtual RefreshToken UserRefreshToken { get; set; }
-        //public virtual ICollection<UserRole> UserRoles { get; set; }
+
+        public virtual RefreshToken UserRefreshToken { get; set; }
+        public virtual ICollection<UserRole> UserRoles { get; set; }
 
         public DateTime? Updated { get; protected set; }
         public DateTime Created { get; protected set; }

@@ -1,4 +1,4 @@
-﻿using InstantMessaging_IM.Domain.ChatService;
+﻿using InstantMessaging_IM.Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,10 +8,13 @@ using System.Threading.Tasks;
 
 namespace InstantMessaging_IM.Application.Common.Contracts
 {
-    public interface IInstantMessagingDbContext
+    public interface IIdentityDbContext
     {
-        DbSet<ChatMessage> ChatMessages { get; }
-        DbSet<ChatSession> ChatSessions { get; }
+        DbSet<User> Users { get; }
+        DbSet<Role> Roles { get; }
+        DbSet<UserRole> UserRoles { get; }
+        DbSet<RefreshToken> RefreshTokens { get; }
+        DbSet<Permission> Permissions { get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }
