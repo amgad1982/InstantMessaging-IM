@@ -15,12 +15,12 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 namespace InstantMessaging_IM.Infrastructure.Persistence
 {
     public class IdentityDbContext : IdentityDbContext<User, Role, int,
-   IdentityUserClaim<int>, // TUserClaim
-   UserRole,                   // TUserRole,
-   IdentityUserLogin<int>, // TUserLogin
-   IdentityRoleClaim<int>, // TRoleClaim
-   IdentityUserToken<int> // TUserToken
-   >, IIdentityDbContext
+       IdentityUserClaim<int>, // TUserClaim
+       UserRole,                   // TUserRole,
+       IdentityUserLogin<int>, // TUserLogin
+       IdentityRoleClaim<int>, // TRoleClaim
+       IdentityUserToken<int> // TUserToken
+       >, IIdentityDbContext
     {
         private readonly ICurrentUserService _currentUserService;
         private readonly IDateTimeProvider _dateTimeProvider;
