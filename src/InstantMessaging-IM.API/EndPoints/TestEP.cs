@@ -13,7 +13,7 @@ namespace InstantMessaging_IM.API.EndPoints
         public override async Task HandleAsync(CancellationToken cancellationToken)
         {
             var response=await new Test().TestMethod();
-            await SendAsync(response, 200, cancellationToken);
+            await SendOkAsync(response, cancellationToken);
         }
     }
 }

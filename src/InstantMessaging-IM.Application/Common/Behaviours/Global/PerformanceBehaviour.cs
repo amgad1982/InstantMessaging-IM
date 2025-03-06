@@ -16,11 +16,10 @@ namespace InstantMessaging_IM.Application.Common.Behaviours.Global
              await Task.CompletedTask;
         }
     }
-    public class PostPerformanceBehaviour : GlobalPostProcessor<PerformanceStateBag>
+    public class PostPerformanceBehaviour(ILogger<LoggingBehaviour> logger) : GlobalPostProcessor<PerformanceStateBag>
     {
         public override async Task PostProcessAsync(IPostProcessorContext context, PerformanceStateBag state, CancellationToken ct)
         {
-            var logger = context.HttpContext.Resolve<ILogger>();
             state.Stop();
             logger.LogInformation("Request: {Name} took {ElapsedMilliseconds} ms", context.Request?.GetType().Name, state.ElapsedTime.TotalMilliseconds);
             await Task.CompletedTask;

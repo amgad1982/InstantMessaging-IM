@@ -4,8 +4,8 @@ using InstantMessaging_IM.Application.Common.Behaviours.Global;
 using InstantMessaging_IM.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Logging.AddConsole();
 
+builder.Services.AddHttpContextAccessor();
 // Add services to the container.
 builder.Services.AddFastEndpoints().AddSwaggerDocument();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
