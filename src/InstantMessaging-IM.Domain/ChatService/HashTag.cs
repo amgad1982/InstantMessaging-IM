@@ -26,6 +26,5 @@ namespace InstantMessaging_IM.Domain.ChatService
             yield return Tag;
         }
     }
-    {
-    }
+    
 }

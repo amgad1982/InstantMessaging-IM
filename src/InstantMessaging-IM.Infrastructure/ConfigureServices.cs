@@ -60,27 +60,27 @@ namespace InstantMessaging_IM.Infrastructure
         .AddEntityFrameworkStores<IdentityDbContext>()
         .AddDefaultTokenProviders();
 
-            services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            //services.AddAuthentication(options =>
+            //{
+            //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
 
-            }).AddJwtBearer(options =>
-            {
-                options.SaveToken = true;
-                options.RequireHttpsMetadata = false;
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidAudience = configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>().Audience,
-                    ValidIssuer = configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>().Issuer,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>().Secret)),
-                    SaveSigninToken = true,
+            //}).AddJwtBearer(options =>
+            //{
+            //    options.SaveToken = true;
+            //    options.RequireHttpsMetadata = false;
+            //    options.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateIssuer = true,
+            //        ValidateAudience = true,
+            //        ValidAudience = configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>().Audience,
+            //        ValidIssuer = configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>().Issuer,
+            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration.GetSection(JwtSettings.SectionName).Get<JwtSettings>().Secret)),
+            //        SaveSigninToken = true,
 
-                };
-            });
+            //    };
+            //});
 
             return services;
         }

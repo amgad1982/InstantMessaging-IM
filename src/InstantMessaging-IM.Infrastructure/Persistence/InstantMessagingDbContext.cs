@@ -1,4 +1,5 @@
 ﻿using InstantMessaging_IM.Application.Common.Contracts;
+using InstantMessaging_IM.Domain.ChatService;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,5 +14,9 @@ namespace InstantMessaging_IM.Infrastructure.Persistence
         public InstantMessagingDbContext(DbContextOptions<InstantMessagingDbContext> options) : base(options)
         {
         }
+
+        public DbSet<ChatMessage> ChatMessages=> Set<ChatMessage>();
+
+        public DbSet<ChatSession> ChatSessions => Set<ChatSession>();
     }
 }
