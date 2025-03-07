@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstantMessaging_IM.Domain.ChatService
+namespace InstantMessaging_IM.Domain.ChatService;
+
+public class ChatSession:Entity<Guid>
 {
-    public class ChatSession:Entity<Guid>
-    {
-        private ChatSession() { }
+    private ChatSession() { }
 
 
-    }
 }

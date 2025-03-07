@@ -1,6 +1,6 @@
 using FastEndpoints;
 using FastEndpoints.Swagger;
-using InstantMessaging_IM.Application.Common.Behaviours.Global;
+using InstantMessaging_IM.API.Behaviours.Global;
 using InstantMessaging_IM.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -7,16 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstantMessaging_IM.Infrastructure.Persistence
+namespace InstantMessaging_IM.Infrastructure.Persistence;
+
+public sealed class InstantMessagingDbContext:DbContext, IInstantMessagingDbContext
 {
-    public sealed class InstantMessagingDbContext:DbContext, IInstantMessagingDbContext
+    public InstantMessagingDbContext(DbContextOptions<InstantMessagingDbContext> options) : base(options)
     {
-        public InstantMessagingDbContext(DbContextOptions<InstantMessagingDbContext> options) : base(options)
-        {
-        }
-
-        public DbSet<ChatMessage> ChatMessages=> Set<ChatMessage>();
-
-        public DbSet<ChatSession> ChatSessions => Set<ChatSession>();
     }
+
+    public DbSet<ChatMessage> ChatMessages=> Set<ChatMessage>();
+
+    public DbSet<ChatSession> ChatSessions => Set<ChatSession>();
 }

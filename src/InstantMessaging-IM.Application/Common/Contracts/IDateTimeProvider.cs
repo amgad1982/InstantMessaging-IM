@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstantMessaging_IM.Application.Common.Contracts
+namespace InstantMessaging_IM.Application.Common.Contracts;
+
+public interface IDateTimeProvider
 {
-    public interface IDateTimeProvider
-    {
-        DateTime UTcNow { get; }
-    }
+    DateTime UTcNow { get; }
 }
 

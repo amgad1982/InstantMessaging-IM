@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstantMessaging_IM.Infrastructure.Services
+namespace InstantMessaging_IM.Infrastructure.Services;
+
+public class DateTimeProvider : IDateTimeProvider
 {
-    public class DateTimeProvider : IDateTimeProvider
-    {
-        public DateTime UTcNow => DateTime.UtcNow;
-    }
+    public DateTime UTcNow => DateTime.UtcNow;
 }
