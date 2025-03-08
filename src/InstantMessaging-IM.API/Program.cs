@@ -22,14 +22,15 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.UseFastEndpoints(c =>
-{
-    c.Endpoints.Configurator = ep =>
-    {
-        ep.PreProcessor<LoggingBehaviour>(Order.Before);
-        ep.PreProcessor<PrePerformanceBehaviour>(Order.Before);
-        ep.PostProcessor<PostPerformanceBehaviour>(Order.After);
-    };
-}).UseSwaggerGen();
+app.UseFastEndpoints(//c =>
+//{
+//    c.Endpoints.Configurator = ep =>
+//    {
+//        ep.PreProcessor<LoggingBehaviour>(Order.Before);
+//        ep.PreProcessor<PrePerformanceBehaviour>(Order.Before);
+//        ep.PostProcessor<PostPerformanceBehaviour>(Order.After);
+//    };
+//}
+).UseSwaggerGen();
 
 app.Run();
